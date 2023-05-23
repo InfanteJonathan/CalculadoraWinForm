@@ -133,7 +133,7 @@ namespace Calculadora
 
         private void btnComa_Click(object sender, EventArgs e)
         {
-            if(txbResultado.Text.Equals("0")) { txbResultado.Text = ""; }
+            if (txbResultado.Text.Equals("0")) { txbResultado.Text = ""; }
             string num = obtenerBoton(sender);
             txbResultado.Text += num;
         }
@@ -170,6 +170,14 @@ namespace Calculadora
         {
             txbResultado.Clear();
             txbCadenaResultado.Clear();
+        }
+
+        private void btnBorrarUno_Click(object sender, EventArgs e)
+        {
+            if (txbResultado.Text.Length > 0)
+            {
+                txbResultado.Text = txbResultado.Text.Remove(txbResultado.Text.Length - 1);
+            }
         }
     }
 }

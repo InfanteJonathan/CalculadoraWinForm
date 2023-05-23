@@ -127,8 +127,9 @@
             btnBorrarUno.Name = "btnBorrarUno";
             btnBorrarUno.Size = new Size(88, 68);
             btnBorrarUno.TabIndex = 4;
-            btnBorrarUno.Text = "<=x";
+            btnBorrarUno.Text = "⌫";
             btnBorrarUno.UseVisualStyleBackColor = false;
+            btnBorrarUno.Click += btnBorrarUno_Click;
             // 
             // btnDivision
             // 
@@ -176,14 +177,14 @@
             // 
             btnDivi.BackColor = Color.DimGray;
             btnDivi.FlatStyle = FlatStyle.Popup;
-            btnDivi.Font = new Font("Arial", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDivi.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             btnDivi.ForeColor = SystemColors.ButtonHighlight;
             btnDivi.Location = new Point(267, 183);
             btnDivi.Margin = new Padding(0);
             btnDivi.Name = "btnDivi";
             btnDivi.Size = new Size(88, 68);
             btnDivi.TabIndex = 8;
-            btnDivi.Text = "/";
+            btnDivi.Text = "÷";
             btnDivi.UseVisualStyleBackColor = false;
             btnDivi.Click += btnDivi_Click;
             // 
@@ -400,7 +401,7 @@
             // 
             btnComa.BackColor = Color.DimGray;
             btnComa.FlatStyle = FlatStyle.Popup;
-            btnComa.Font = new Font("Arial", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            btnComa.Font = new Font("Arial", 20F, FontStyle.Regular, GraphicsUnit.Point);
             btnComa.ForeColor = SystemColors.ButtonHighlight;
             btnComa.Location = new Point(179, 455);
             btnComa.Margin = new Padding(0);
